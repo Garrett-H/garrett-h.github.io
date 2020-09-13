@@ -1,0 +1,191 @@
+%-------------------------
+%The MIT License (MIT)
+%
+%Copyright (c) 2015 Sourabh Bajaj
+%
+%Permission is hereby granted, free of charge, to any person obtaining a copy
+%of this software and associated documentation files (the "Software"), to deal
+%in the Software without restriction, including without limitation the rights
+%to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%copies of the Software, and to permit persons to whom the Software is
+%furnished to do so, subject to the following conditions:
+%
+%The above copyright notice and this permission notice shall be included in all
+%copies or substantial portions of the Software.
+%
+%THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%SOFTWARE.
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+%\addtolength{\topmargin}{-.5in}
+%\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-12pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+
+\newcommand{\multicomment}[1]{}
+
+\newcommand{\Section}[1]{\textbf{\section*{#1}}}
+
+\newcommand{\resumeItem}[2]{
+  \item[] \small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}
+  	\item[]
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-13pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-15pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+	\textbf{{\LARGE Garrett Hay}}
+\end{center}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l c c r}
+	\href{github.com/Garrett-H}{github.com/Garrett-H} & \href{mailto:garretthay97@gmail.com}{garretthay97@gmail.com} & +1-731-446-9792 & \href{linkedin.com/in/garretthay} {linkedin.com/in/garretthay} \\
+\end{tabular*}
+%-----------OBJECTIVE------------------
+\Section{Summary}
+\begin{itemize}[noitemsep,nolistsep] \small 
+    	\item[$\circ$] Recent graduate of Computer Science
+    	\item[$\circ$] 4+ years experience as IT Specialist and web assistant
+    	\item[$\circ$] Organized contributor able to meet goals independently or within a team
+    	\item[$\circ$] Experienced in Agile Production methodology 
+    \end{itemize}
+    \vspace{-18pt}
+%As a recent graduate of Computer Science specializing in configuration \& repair with 3+ years experience as IT Specialist, seeking an organization where I can help users in both software support \& development.  
+
+%-----------EDUCATION-----------------
+\Section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Tennessee at Martin}{Martin, TN} %3.38
+      {BS in Computer Science}{Anticipated Graduation: \textbf{May 2020}}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\Section{Experience}
+	\resumeSubHeadingListStart
+
+	\resumeSubheading
+	{UT Martin Information Technology}{Martin, TN}
+	{Support Technician Assistant}{Aug 2016 - July 2020}
+    \resumeItemListStart
+    	\resumeItem{Configuration \& Installation}
+        { Preparation \& installation of Windows, Apple, \& Linux computers, scanners, printers, \& any included accessories for staff \& faculty of UT Martin. Assisted in training of new hire Student Assistants.}
+        \resumeItem{Field Services} {Troubleshooting, repair, or replacement of desktops, laptops, \& All-in-Ones detailed components, including storage components, motherboard, memory, wiring, screen, \& expansion cards.}
+        \resumeItem{Web Development Assistant} {Continuous development of `utm.edu' for university staff \& faculty through PHP.}
+     \resumeItemListEnd     
+  	\resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\vspace{0.8pt}
+\Section{Languages, Certifications, \& Skills}
+	\resumeSubHeadingListStart
+		\resumeSubItem{Languages}
+			{Python, C++, C\#, \LaTeX, Java, Javascript, Haskell, Clingo's ASP, HTML}
+\multicomment{\item[]{\textbf{Languages}{: Python, C++, C\#, \LaTeX, Java, Javascript, Haskell, Clingo's ASP, HTML}}}
+%		\resumeSubItem{Certifications}
+%      		{Dell TechDirect Client}
+    	\resumeSubItem{Tools}
+      		{Emacs, Vim, Visual Studio, Visual Studio Code, Eclipse, Git, Docker, Adobe Dreamweaver}
+      	\resumeSubItem{Frameworks}
+      		{.NET Core, Node.js, Electron, Express.js, Windows Presentation Foundation (WPF)}
+	\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-6pt}
+\Section{Projects}
+  \resumeSubHeadingListStart
+    
+    \resumeSubItem{WebDocker (\href{https://github.com/bremwhit/WebDocker} {github.com/bremwhit/WebDocker})}
+    	{An Easy-to-Use, All-Purpose Platform for Running Containers on the Web. The program allows users to create, manage, \& interact with their containers all through a webpage.}
+    \begin{itemize}
+    	\item[$\circ$] Designed as a full stack web application using Docker, Node.js, Google Firebase, \& NGINX.
+    	\item[$\circ$] Created by a 3 person team for a Senior Design Seminar course.
+    	\item [$\circ$] $1^{st}$ place at ACM Mid-Southeast Chapter Conference in undergraduate programs.
+    \end{itemize}
+    
+    \resumeSubItem{DockerUI (\href{https://github.com/lucianfreeze/DockerUI}{github.com/lucianfreeze/DockerUI})}
+    	{A graphical interface to help manage any local Docker instance.  Allowing the ability to easily create, view, toggle state, and delete local containers without the need to open a terminal.}
+    \begin{itemize}
+    	\item[$\circ$] Designed as an Electron desktop application using Docker, Node.js, \& Electron.
+    	\item[$\circ$] Created by a 3 person team for a 3-day hackathon project.
+    \end{itemize}
+    	
+    \resumeSubItem{Leaping Llamas' (\href{https://github.com/Garrett-H/Leapin-Llamas}{github.com/Garrett-H/Leapin-Llamas})}
+    	{A side-scrolling game where a player-controlled llama leaps between columns trying not to touch them.}
+    \begin{itemize}
+    	\item[$\circ$] C\# WPF application using the .NET framework in Visual Studio
+    	\item[$\circ$] Created by a 3 person team for an upper-level Software Engineering course
+    \end{itemize}
+
+    \resumeSubItem{THECR (\href{https://github.com/NicholasReid1992/THECR} {github.com/NicholasReid1992/THECR})}
+    	{A Simplified Management Solution for assisting UT Martin with the upkeep \& creation of scripts to gather student data for the Tennessee Higher Education Commission (THEC) report.}
+    \begin{itemize}
+    	\item[$\circ$] C\# console application using the .NET Core framework for an Oracle Database.
+    	\item[$\circ$] Developed by a 2 person team for a Senior Design Seminar.
+    \end{itemize}
+    
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
